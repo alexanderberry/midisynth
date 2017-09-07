@@ -19,17 +19,59 @@ public class MainActivity extends AppCompatActivity implements MidiDriver.OnMidi
 
     private byte[] event;
     private int[] config;
-    private Button playNote;
+    /**
+     * An appended S signifies a note is sharp.
+     * Oct signifies the note in the upper octave of the scale.
+     */
+    private Button playC;
+    private Button playCS;
+    private Button playD;
+    private Button playDS;
+    private Button playE;
+    private Button playF;
+    private Button playFS;
+    private Button playG;
+    private Button playGS;
+    private Button playA;
+    private Button playAS;
+    private Button playB;
+    private Button playCOct;
 
     private Spinner spinnerInstruments;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        playNote = (Button) findViewById(R.id.button);
-        playNote.setOnTouchListener(this);
+        playC = (Button) findViewById(R.id.playC);
+        playC.setOnTouchListener(this);
+        playCS = (Button) findViewById(R.id.playCS);
+        playCS.setOnTouchListener(this);
+        playD = (Button) findViewById(R.id.playD);
+        playD.setOnTouchListener(this);
+        playDS = (Button) findViewById(R.id.playDS);
+        playDS.setOnTouchListener(this);
+        playE = (Button) findViewById(R.id.playE);
+        playE.setOnTouchListener(this);
+        playF = (Button) findViewById(R.id.playF);
+        playF.setOnTouchListener(this);
+        playFS = (Button) findViewById(R.id.playFS);
+        playFS.setOnTouchListener(this);
+        playG = (Button) findViewById(R.id.playG);
+        playG.setOnTouchListener(this);
+        playGS = (Button) findViewById(R.id.playGS);
+        playGS.setOnTouchListener(this);
+        playA = (Button) findViewById(R.id.playA);
+        playA.setOnTouchListener(this);
+        playAS = (Button) findViewById(R.id.playAS);
+        playAS.setOnTouchListener(this);
+        playB = (Button) findViewById(R.id.playB);
+        playB.setOnTouchListener(this);
+        playC = (Button) findViewById(R.id.playC);
+        playC.setOnTouchListener(this);
+
         midiDriver = new MidiDriver();
         midiDriver.setOnMidiStartListener(this);
+        //wire the spinner
         spinnerInstruments = (Spinner)findViewById(R.id.spinnerInstruments);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.instruments_array, android.R.layout.simple_spinner_item);
@@ -75,13 +117,12 @@ public class MainActivity extends AppCompatActivity implements MidiDriver.OnMidi
         midiDriver.write(event);
     }
 
-    private void stopNote(){
+    private void stopNote(int noteNumber){
         //Creates a new note OFF message for C3 at min v on channel 1
         event = new byte[3];
         //more of the awful hacky sending individual bytes over the channel
-        //TODO: Abstract implementation for stopNote()
         event[0] = (byte) (0x80|0x00); //0x80 = note OFF, 0x00 = channel 1
-        event[1] = (byte) 0x3C; //0x3C = C3
+        event[1] = (byte) noteNumber; //0x3C = C3
         event[2] = (byte) 0x00; //0x00 = min. velocity (0)
 
         //Sends date to MIDI driver
@@ -92,7 +133,7 @@ public class MainActivity extends AppCompatActivity implements MidiDriver.OnMidi
     public boolean onTouch(View v, MotionEvent event){
         Log.d(this.getClass().getName(), "Motion event: " + event);
         //TODO: Fix onTouch for abstract implementation of playNote and stopNote
-        if(v.getId() == R.id.button){
+        if(v.getId() == R.id.playC){
             if(event.getAction() == MotionEvent.ACTION_DOWN){
                 Log.d(this.getClass().getName(), "MotionEvent.ACTION_DOWN");
                 playNote();

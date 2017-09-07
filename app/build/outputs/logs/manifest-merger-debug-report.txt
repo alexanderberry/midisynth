@@ -1,0 +1,106 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:2:1-29:12
+	package
+		ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:3:5-42
+		INJECTED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml
+application
+ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:5:5-27:19
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/per6/.android/build-cache/f96a1b16339b0ccf2414b9815a50f6a6995175b8/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/per6/.android/build-cache/9b15f8ec5666631c0d7cc8a090d7fb10c8f5e071/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/per6/.android/build-cache/89df5a1a2c0a2197ae56dd44a7a9b54ad301b497/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/per6/.android/build-cache/efdbb486121df49afba944a01a42b9481f2a3702/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/per6/.android/build-cache/ec8a82f2642d77a869ef371a03b4461e53dd8128/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/per6/.android/build-cache/1d71412f085bc88ebaf005918242f03cd926cbd4/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/per6/.android/build-cache/f71ce93f546f38d09a57fc6b6f6042d37325c325/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/per6/.android/build-cache/a222e3d094bee2275533f24514064fb87b079dcf/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/per6/.android/build-cache/a6485a423a8c936d395f9fb33c4f6c4060f8072d/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/per6/.android/build-cache/0f8133f2b711904ed61e5b15f3d09281627faae1/output/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:10:9-35
+	android:roundIcon
+		ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:9:9-54
+	android:allowBackup
+		ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.berry.midisynth.MainActivity
+ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:16:27-74
+service#com.example.berry.midibackend.synth.SynthDeviceService
+ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:19:9-26:19
+	android:permission
+		ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:20:13-77
+	android:name
+		ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:19:18-87
+intent-filter#android.media.midi.MidiDeviceService
+ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:21:13-23:29
+action#android.media.midi.MidiDeviceService
+ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:22:17-79
+	android:name
+		ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:22:25-76
+meta-data#android.media.midi.MidiDeviceService
+ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:24:13-25:61
+	android:resource
+		ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:25:17-58
+	android:name
+		ADDED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml:24:24-75
+uses-sdk
+INJECTED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/per6/.android/build-cache/f96a1b16339b0ccf2414b9815a50f6a6995175b8/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/per6/.android/build-cache/9b15f8ec5666631c0d7cc8a090d7fb10c8f5e071/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/per6/.android/build-cache/89df5a1a2c0a2197ae56dd44a7a9b54ad301b497/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/per6/.android/build-cache/efdbb486121df49afba944a01a42b9481f2a3702/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/per6/.android/build-cache/ec8a82f2642d77a869ef371a03b4461e53dd8128/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/per6/.android/build-cache/1d71412f085bc88ebaf005918242f03cd926cbd4/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/per6/.android/build-cache/f71ce93f546f38d09a57fc6b6f6042d37325c325/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/per6/.android/build-cache/a222e3d094bee2275533f24514064fb87b079dcf/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/per6/.android/build-cache/a6485a423a8c936d395f9fb33c4f6c4060f8072d/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/per6/.android/build-cache/0f8133f2b711904ed61e5b15f3d09281627faae1/output/AndroidManifest.xml:5:5-7:41
+MERGED from [MidiSynth:MidiDriver-1.14:unspecified] /Users/per6/.android/build-cache/15204057afe4073a90d9eb31877cbb0d4135b745/output/AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/per6/.android/build-cache/f96a1b16339b0ccf2414b9815a50f6a6995175b8/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/per6/.android/build-cache/f96a1b16339b0ccf2414b9815a50f6a6995175b8/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/per6/.android/build-cache/9b15f8ec5666631c0d7cc8a090d7fb10c8f5e071/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/per6/.android/build-cache/89df5a1a2c0a2197ae56dd44a7a9b54ad301b497/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/per6/.android/build-cache/efdbb486121df49afba944a01a42b9481f2a3702/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/per6/.android/build-cache/ec8a82f2642d77a869ef371a03b4461e53dd8128/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/per6/.android/build-cache/1d71412f085bc88ebaf005918242f03cd926cbd4/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/per6/.android/build-cache/f71ce93f546f38d09a57fc6b6f6042d37325c325/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/per6/.android/build-cache/a222e3d094bee2275533f24514064fb87b079dcf/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/per6/.android/build-cache/a6485a423a8c936d395f9fb33c4f6c4060f8072d/output/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/per6/.android/build-cache/f96a1b16339b0ccf2414b9815a50f6a6995175b8/output/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/per6/.android/build-cache/f96a1b16339b0ccf2414b9815a50f6a6995175b8/output/AndroidManifest.xml:26:9-47

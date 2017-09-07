@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a0fadd8dc3333e9dc2a7bbe3aa87ad09491bd145">
+        <dex dex="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b1539a6858c6995dcd0a1f3cec09c51a548cc783/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9ba01b1d9ab5e7deb3a5d80823aac60e5d4a2e23/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/per6/.android/build-cache/15204057afe4073a90d9eb31877cbb0d4135b745/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ce7b890e7aa96282cfc131e7e95ff44167aba2d1">
+        <dex dex="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_66721a321d4afd25b2b17bba5324daacd142f238/classes.dex" />
+    </item>
+
+</items>

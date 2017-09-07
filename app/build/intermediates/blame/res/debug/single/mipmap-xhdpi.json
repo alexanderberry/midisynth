@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher_round.png",
+        "source": "/Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    }
+]

@@ -1,0 +1,7 @@
+#Tue Sep 05 13:52:19 PDT 2017
+base.0=/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9ba01b1d9ab5e7deb3a5d80823aac60e5d4a2e23
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b1539a6858c6995dcd0a1f3cec09c51a548cc783/classes.dex
+base.1=/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b1539a6858c6995dcd0a1f3cec09c51a548cc783
+file.0=/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9ba01b1d9ab5e7deb3a5d80823aac60e5d4a2e23/classes.dex

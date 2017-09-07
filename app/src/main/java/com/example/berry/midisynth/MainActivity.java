@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements MidiDriver.OnMidi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //wire the buttons
         playC = (Button) findViewById(R.id.playC);
         playC.setOnTouchListener(this);
         playCS = (Button) findViewById(R.id.playCS);
@@ -66,8 +67,8 @@ public class MainActivity extends AppCompatActivity implements MidiDriver.OnMidi
         playAS.setOnTouchListener(this);
         playB = (Button) findViewById(R.id.playB);
         playB.setOnTouchListener(this);
-        playC = (Button) findViewById(R.id.playC);
-        playC.setOnTouchListener(this);
+        playCOct = (Button) findViewById(R.id.playCOct);
+        playCOct.setOnTouchListener(this);
 
         midiDriver = new MidiDriver();
         midiDriver.setOnMidiStartListener(this);
@@ -78,7 +79,6 @@ public class MainActivity extends AppCompatActivity implements MidiDriver.OnMidi
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerInstruments.setAdapter(adapter);
         spinnerInstruments.setOnItemSelectedListener(this);
-
     }
 
     @Override
@@ -121,34 +121,88 @@ public class MainActivity extends AppCompatActivity implements MidiDriver.OnMidi
         //Creates a new note OFF message for C3 at min v on channel 1
         event = new byte[3];
         //more of the awful hacky sending individual bytes over the channel
-        event[0] = (byte) (0x80|0x00); //0x80 = note OFF, 0x00 = channel 1
+        event[0] = (byte) (MidiConstants.STATUS_NOTE_OFF|0x00); //0x80 = note OFF, 0x00 = channel 1
         event[1] = (byte) noteNumber; //0x3C = C3
         event[2] = (byte) 0x00; //0x00 = min. velocity (0)
 
-        //Sends date to MIDI driver
+        //Sends data to MIDI driver
+        midiDriver.write(event);
+    }
+
+    private void selectInstrument(int instrument){
+        //Creates a program change to select an instrument on channel 1
+        event = new byte[2];
+        //even more awful hacky sending individual bytes over the channel
+        event[0] = (byte) (MidiConstants.STATUS_PROGRAM_CHANGE|0x00); //0x00 = channel 1
+        event[1] = (byte) (instrument);
+
+        //Send data to MIDI driver
         midiDriver.write(event);
     }
 
     @Override
     public boolean onTouch(View v, MotionEvent event){
         Log.d(this.getClass().getName(), "Motion event: " + event);
-        //TODO: Fix onTouch for abstract implementation of playNote and stopNote
-        if(v.getId() == R.id.playC){
-            if(event.getAction() == MotionEvent.ACTION_DOWN){
-                Log.d(this.getClass().getName(), "MotionEvent.ACTION_DOWN");
-                playNote();
-            }
-            if(event.getAction() == MotionEvent.ACTION_UP){
-                Log.d(this.getClass().getName(), "MotionEvent.ACTION_UP");
-                stopNote();
-            }
+        int noteNumber;
+        //set the note number based on which button is pressed
+        switch(v.getId()) {
+            case R.id.playC:
+                noteNumber = 60;
+                break;
+            case R.id.playCS:
+                noteNumber = 61;
+                break;
+            case R.id.playD:
+                noteNumber = 62;
+                break;
+            case R.id.playDS:
+                noteNumber = 63;
+                break;
+            case R.id.playE:
+                noteNumber = 64;
+                break;
+            case R.id.playF:
+                noteNumber = 65;
+                break;
+            case R.id.playFS:
+                noteNumber = 66;
+                break;
+            case R.id.playG:
+                noteNumber = 67;
+                break;
+            case R.id.playGS:
+                noteNumber = 68;
+                break;
+            case R.id.playA:
+                noteNumber = 69; //lol
+                break;
+            case R.id.playAS:
+                noteNumber = 70;
+                break;
+            case R.id.playB:
+                noteNumber = 71;
+                break;
+            case R.id.playCOct:
+                noteNumber = 72;
+                break;
+            default:
+                noteNumber = -1;
+        }
+
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            Log.d(this.getClass().getName(), "MotionEvent.ACTION_DOWN");
+            playNote(noteNumber);
+        }
+        if (event.getAction() == MotionEvent.ACTION_UP) {
+            Log.d(this.getClass().getName(), "MotionEvent.ACTION_UP");
+            stopNote(noteNumber);
         }
         return false;
     }
 
     @Override
-    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-
+    public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+        selectInstrument(position);
     }
 
     @Override

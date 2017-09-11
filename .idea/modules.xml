@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/MidiDriver-1.14/MidiDriver-1.14.iml" filepath="$PROJECT_DIR$/MidiDriver-1.14/MidiDriver-1.14.iml" />
       <module fileurl="file://$PROJECT_DIR$/MidiSynth.iml" filepath="$PROJECT_DIR$/MidiSynth.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javax.sound.midi/javax.sound.midi.iml" filepath="$PROJECT_DIR$/javax.sound.midi/javax.sound.midi.iml" />
     </modules>
   </component>
 </project>

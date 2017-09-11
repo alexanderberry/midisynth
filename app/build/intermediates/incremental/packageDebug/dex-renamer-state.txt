@@ -1,4 +1,4 @@
-#Tue Sep 05 13:52:19 PDT 2017
+#Mon Sep 11 12:49:48 PDT 2017
 base.0=/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9ba01b1d9ab5e7deb3a5d80823aac60e5d4a2e23
 renamed.1=classes2.dex
 renamed.0=classes.dex

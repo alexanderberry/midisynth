@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity implements MidiDriver.OnMidi
 
     private byte[] event;
     private int[] config;
+
+    private int oct;
     /**
      * An appended S signifies a note is sharp.
      * Oct signifies the note in the upper octave of the scale.
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements MidiDriver.OnMidi
     private Button playCOct;
 
     private Spinner spinnerInstruments;
+    private Spinner spinnerOct;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,6 +88,7 @@ public class MainActivity extends AppCompatActivity implements MidiDriver.OnMidi
 
         midiDriver = new MidiDriver();
         midiDriver.setOnMidiStartListener(this);
+
         //wire the spinner
         spinnerInstruments = (Spinner)findViewById(R.id.spinnerInstruments);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -92,6 +96,22 @@ public class MainActivity extends AppCompatActivity implements MidiDriver.OnMidi
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerInstruments.setAdapter(adapter);
         spinnerInstruments.setOnItemSelectedListener(this);
+        spinnerOct = (Spinner)findViewById(R.id.spinnerOct);
+        ArrayAdapter<CharSequence> adapterOct = ArrayAdapter.createFromResource(this,
+                R.array.oct_array, android.R.layout.simple_spinner_item);
+        adapterOct.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerOct.setAdapter(adapterOct);
+        spinnerOct.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                oct = position;
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
     }
 
     @Override
@@ -160,43 +180,43 @@ public class MainActivity extends AppCompatActivity implements MidiDriver.OnMidi
         //set the note number based on which button is pressed
         switch(v.getId()) {
             case R.id.playC:
-                noteNumber = 60;
+                noteNumber = 24 + 12 * oct;
                 break;
             case R.id.playCS:
-                noteNumber = 61;
+                noteNumber = 25 + 12 * oct;
                 break;
             case R.id.playD:
-                noteNumber = 62;
+                noteNumber = 26 + 12 * oct;
                 break;
             case R.id.playDS:
-                noteNumber = 63;
+                noteNumber = 27 + 12 * oct;
                 break;
             case R.id.playE:
-                noteNumber = 64;
+                noteNumber = 28 + 12 * oct;
                 break;
             case R.id.playF:
-                noteNumber = 65;
+                noteNumber = 29 + 12 * oct;
                 break;
             case R.id.playFS:
-                noteNumber = 66;
+                noteNumber = 30 + 12 * oct;
                 break;
             case R.id.playG:
-                noteNumber = 67;
+                noteNumber = 31 + 12 * oct;
                 break;
             case R.id.playGS:
-                noteNumber = 68;
+                noteNumber = 32 + 12 * oct;
                 break;
             case R.id.playA:
-                noteNumber = 69; //lol
+                noteNumber = 33 + 12 * oct;
                 break;
             case R.id.playAS:
-                noteNumber = 70;
+                noteNumber = 34 + 12 * oct;
                 break;
             case R.id.playB:
-                noteNumber = 71;
+                noteNumber = 35 + 12 * oct;
                 break;
             case R.id.playCOct:
-                noteNumber = 72;
+                noteNumber = 36 + 12 * oct;
                 break;
             default:
                 noteNumber = -1;

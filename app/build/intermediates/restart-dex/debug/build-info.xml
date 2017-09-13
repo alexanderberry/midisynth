@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1505163442231"
+    timestamp="1505335776318"
     token="8927675904055304920"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -24,19 +24,22 @@
         duration="0" />
 
     <artifact
-        location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-        type="SPLIT" />
-    <artifact
         location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/outputs/apk/app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1505158958321"
+        timestamp="1505335572928"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
+        <artifact
+            location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
@@ -53,9 +56,6 @@
             location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
@@ -67,40 +67,11 @@
         <artifact
             location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
-        <artifact
-            location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1505163376357"
+        timestamp="1505335776318"
         verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1505163442231"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
         <artifact
             location="/Users/per6/AndroidStudioProjects/MidiSynth/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />

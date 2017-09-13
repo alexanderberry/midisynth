@@ -20,7 +20,7 @@ public class MidiParser {
     public static final String[] NOTE_NAMES = {"C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"};
 
     public static void main(String[] args) throws Exception {
-        Sequence sequence = MidiSystem.getSequence(new File("/Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/java/com/example/berry/midibackend/parser/MidiParser.java"));
+        Sequence sequence = MidiSystem.getSequence(new File("/Users/per6/AndroidStudioProjects/MidiSynth/app/src/main/java/com/example/berry/midibackend/parser/MIDI_sample.mid"));
 
         int trackNumber = 0;
         for (Track track :  sequence.getTracks()) {

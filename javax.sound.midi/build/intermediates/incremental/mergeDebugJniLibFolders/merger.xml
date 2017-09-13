@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/per6/AndroidStudioProjects/MidiSynth/javax.sound.midi/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/per6/AndroidStudioProjects/MidiSynth/javax.sound.midi/build-types/debug/jniLibs"/></dataSet></merger>
